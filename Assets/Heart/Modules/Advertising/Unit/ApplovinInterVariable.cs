@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 // ReSharper disable AccessToStaticMemberViaDerivedType
 namespace Pancake.Monetization
@@ -26,6 +27,7 @@ namespace Pancake.Monetization
                 _registerCallback = true;
             }
 
+            Debug.Log("Load Applovin Interstitial");
             MaxSdk.LoadInterstitial(Id);
 #endif
         }

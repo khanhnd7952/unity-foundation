@@ -11,20 +11,26 @@ namespace Pancake.Monetization
         public override void Init()
         {
 #if PANCAKE_ADVERTISING && PANCAKE_APPLOVIN
+            Debug.Log("Init Applovin Ad Client");
             MaxSdk.SetSdkKey(adSettings.SDKKey);
             MaxSdk.InitializeSdk();
+            MaxSdkCallbacks.OnSdkInitializedEvent += configuration =>
+            {
+                Debug.Log(" Applovin SDK Initialized: " + configuration.IsSuccessfullyInitialized);
+                adSettings.ApplovinBanner.paidedCallback = AppTracking.TrackRevenue;
+                adSettings.ApplovinInter.paidedCallback = AppTracking.TrackRevenue;
+                adSettings.ApplovinReward.paidedCallback = AppTracking.TrackRevenue;
+                adSettings.ApplovinRewardInter.paidedCallback = AppTracking.TrackRevenue;
+                adSettings.ApplovinAppOpen.paidedCallback = AppTracking.TrackRevenue;
+                LoadInterstitial();
+                LoadRewarded();
+                LoadRewardedInterstitial();
+                LoadAppOpen();
+                LoadBanner();
+                (adSettings.ApplovinBanner as IBannerHide)
+                    ?.Hide(); // hide banner first time when banner auto show when loaded
+            };
             MaxSdk.SetIsAgeRestrictedUser(adSettings.ApplovinEnableAgeRestrictedUser);
-            adSettings.ApplovinBanner.paidedCallback = AppTracking.TrackRevenue;
-            adSettings.ApplovinInter.paidedCallback = AppTracking.TrackRevenue;
-            adSettings.ApplovinReward.paidedCallback = AppTracking.TrackRevenue;
-            adSettings.ApplovinRewardInter.paidedCallback = AppTracking.TrackRevenue;
-            adSettings.ApplovinAppOpen.paidedCallback = AppTracking.TrackRevenue;
-            LoadInterstitial();
-            LoadRewarded();
-            LoadRewardedInterstitial();
-            LoadAppOpen();
-            LoadBanner();
-            (adSettings.ApplovinBanner as IBannerHide)?.Hide(); // hide banner first time when banner auto show when loaded
 #endif
         }
 
