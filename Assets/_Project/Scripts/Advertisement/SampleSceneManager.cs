@@ -1,4 +1,5 @@
-﻿using Pancake.Monetization;
+﻿using System;
+using Pancake.Monetization;
 using Pancake.Scriptable;
 using UnityEngine;
 
@@ -6,17 +7,25 @@ namespace _Project.Scripts.Advertisement
 {
     public class SampleSceneManager : MonoBehaviour
     {
-        [SerializeField] private ApplovinInterVariable interVariable;
+        [SerializeField] private AdSettings adSettings;
         [SerializeField] private ScriptableEventString changeNetworkEvent;
 
-        [ContextMenu("Show Inter")]
+        private void Start()
+        {
+        }
+
         public void ShowInter()
         {
             Debug.Log("Show Interstitial");
-            interVariable.Show();
+            adSettings.ApplovinInter.Show();
         }
 
-        [ContextMenu("Change Admob")]
+        public void ShowReward()
+        {
+            Debug.Log("Show Reward");
+            adSettings.ApplovinReward.Show();
+        }
+
         public void ChangeAdmob()
         {
             changeNetworkEvent.Raise("admob");
