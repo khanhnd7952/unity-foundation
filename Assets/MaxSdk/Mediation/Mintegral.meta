@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: 798a06041ccca490f94acdf1fbda9cc2
+guid: 1464d4ea255a446bd8743a854b478af1
 labels:
 - al_max
 - al_max_export_path-MaxSdk/Mediation/Mintegral
+- al_max_export_path-MaxSdk\Mediation\Mintegral
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

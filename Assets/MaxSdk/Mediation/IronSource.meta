@@ -1,8 +1,9 @@
 fileFormatVersion: 2
-guid: 04aecfe59f41b4c05a7f5b89569c1055
+guid: 7773794a42f974635b934b8499992709
 labels:
 - al_max
 - al_max_export_path-MaxSdk/Mediation/IronSource
+- al_max_export_path-MaxSdk\Mediation\IronSource
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
