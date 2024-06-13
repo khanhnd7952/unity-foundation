@@ -1,14 +1,14 @@
 {
-  "name": "com.pancake.heart",
+  "name": "com.khanhnd.heart",
   "displayName": "Heart",
   "description": "The heart of the world tree, use for make game in Unity3D",
-  "version": "2.7.2",
-  "unity": "2022.2",
+  "version": "0.0.1",
+  "unity": "2022.3",
   "category": "core",
   "author": {
-    "name": "yenmoc",
-    "email": "phongsoyenmoc.diep@gmail.com",
-    "url": "https://github.com/yenmoc"
+    "name": "khanhnd",
+    "email": "khanh.nd7952@gmail.com",
+    "url": ""
   },
   "license": "MIT",
   "keywords": [
@@ -24,10 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:pancake-llc/heart.git",
+    "url": "git@github.com:khanhnd7952/unity-foundation.git",
     "directory": "Heart"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@pancake-llc"
   }
 }
