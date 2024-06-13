@@ -5,5 +5,5 @@
 # How to install
 
 ```csharp
-"com.pancake.heart": "https://github.com/khanhnd7952/unity-foundation?path=Assets/Heart#0.0.1",
+"com.pancake.heart": "https://github.com/khanhnd7952/unity-foundation.git?path=Assets/Heart#0.0.1",
 ```
