@@ -17,28 +17,12 @@
       },
       "hash": "25a9cdb4007f5fc05692576bf27d65063de0b4cd"
     },
-    "com.esotericsoftware.spine.spine-csharp": {
-      "version": "https://github.com/EsotericSoftware/spine-runtimes.git?path=spine-csharp/src#4.1",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "238e86c58a50359968718c1f13cc8ec10b8b2c37"
-    },
-    "com.esotericsoftware.spine.spine-unity": {
-      "version": "https://github.com/EsotericSoftware/spine-runtimes.git?path=spine-unity/Assets/Spine#4.1",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.esotericsoftware.spine.spine-csharp": "4.1.0"
-      },
-      "hash": "238e86c58a50359968718c1f13cc8ec10b8b2c37"
-    },
     "com.google.external-dependency-manager": {
-      "version": "https://github.com/google-unity/external-dependency-manager.git#1.2.179",
+      "version": "https://github.com/google-unity/external-dependency-manager.git#1.2.177",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "66fd0c1b84d72ec9ac32e2eece65f2630b4b262e"
+      "hash": "64445bb59f6d9d4d7f24be5eea45e7fdf2146546"
     },
     "com.tayx.graphy": {
       "version": "https://github.com/pancake-llc/graphy.git#3.0.6",
@@ -150,19 +134,6 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.purchasing": {
-      "version": "4.11.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0",
-        "com.unity.modules.androidjni": "1.0.0",
-        "com.unity.services.core": "1.8.2"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.scriptablebuildpipeline": {
       "version": "1.21.22",
       "depth": 1,
@@ -177,49 +148,6 @@
       "dependencies": {
         "com.unity.collections": "2.1.4",
         "com.unity.burst": "1.7.2"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.authentication": {
-      "version": "3.1.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.services.core": "1.12.0",
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.ugui": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.cloudsave": {
-      "version": "3.1.1",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.services.authentication": "2.6.1",
-        "com.unity.services.core": "1.4.3"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.core": {
-      "version": "1.12.0",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.modules.unitywebrequest": "1.0.0",
-        "com.unity.nuget.newtonsoft-json": "3.2.1",
-        "com.unity.modules.androidjni": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.services.leaderboards": {
-      "version": "2.0.0",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.services.authentication": "3.1.0",
-        "com.unity.services.core": "1.12.0"
       },
       "url": "https://packages.unity.com"
     },
