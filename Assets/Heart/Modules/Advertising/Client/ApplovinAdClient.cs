@@ -32,7 +32,7 @@ namespace Pancake.Monetization
         public override void LoadBanner()
         {
 #if PANCAKE_ADVERTISING && PANCAKE_APPLOVIN
-            adSettings.AdmobBanner.Load();
+            adSettings.ApplovinBanner.Load();
 #endif
         }
 
